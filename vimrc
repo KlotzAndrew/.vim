@@ -6,6 +6,9 @@ set ruler
 set noerrorbells
 set colorcolumn=80
 
+set noswapfile
+set nobackup
+
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -21,6 +24,8 @@ nnoremap <C-H> <C-W><C-H>
 
 "==================== NerdTree ====================
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
 "open when no files specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
