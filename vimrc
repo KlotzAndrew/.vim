@@ -36,3 +36,4 @@ au BufNewFile,BufRead *.js setlocal et ts=2 sw=2
 
 au FileType nginx setlocal noet ts=4 sw=4 sts=4
 autocmd FileType dockerfile set noet ts=4 sw=4 sts=4
+autocmd FileType Makefile set noet ts=4 sw=4 sts=4
